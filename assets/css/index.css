@@ -1,0 +1,91 @@
+#map{
+    height: 70vh;
+    width: 100vw;
+}
+.espaço{
+    width: 100px;
+    height: 100px;
+}
+
+#part-1{
+    background: var(--cor-azul);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.simbolo_temperatura{
+    font-family: beach party;
+    font-size: var(--font-mobile-p);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--cor-preto-transp);
+}
+
+.texto_temperatura{
+    text-align: center;
+}
+
+.barra_busca{
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.texto_busca{
+    font-family: beach party;
+    font-size: var(--font-mobile-p);
+    color: var(--cor-preto-transp);
+}
+
+.busca{
+    padding: 10px;
+    border-radius: 10px;
+    background:var(--cor-azul-claro);
+    font-family: beach party;
+    font-size: var(--font-mobile-p);
+    color: var(--cor-verde);
+}
+
+.temperatura{
+    font-family: beach party;
+    margin:.4em;
+    color: var(--cor-preto-transp);
+    font-size: var(--font-mobile-p2);
+}
+
+.cidade{
+    font-size: var(--font-mobile-p);
+    text-align: center;
+    margin-bottom: .2em;
+}
+
+.grau{
+    font-size: var(--font-mobile-p2);
+    text-align: center;
+}
+
+@media screen and (min-width:1024px) {
+    #map{
+        transform: scale(1.0);
+        width: 100vw;
+        height: 70vh;
+    }
+    .texto_busca{
+        font-size: var(--font-web-p2);
+    }
+    .cidade{
+        font-size: var(--font-web-p2);
+    }
+    .busca{
+        font-size: var(--font-web-p);
+    }
+    .grau{
+        font-size: var(--font-web-temperatura);
+    }
+    .simbolo_temperatura{
+    font-size: var(--font-web-p);
+}
+}
