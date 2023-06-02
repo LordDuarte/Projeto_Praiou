@@ -71,7 +71,7 @@ else{
     noWrap: true
     }).addTo(map);
         
-
+  map.doubleClickZoom.disable();
 
 
     var marcador = L.marker([0,0]).addTo(map)
