@@ -1,0 +1,149 @@
+#map{
+    height: 70vh;
+    width: 100vw;
+}
+.espaço{
+    width: 100px;
+    height: 100px;
+}
+
+#part-1{
+    background: var(--cor-azul);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.simbolo_temperatura{
+    font-family: beach party;
+    font-size: var(--font-mobile-p);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--cor-preto-transp);
+}
+
+.texto_temperatura{
+    text-align: center;
+}
+
+.barra_busca{
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    margin:.4em;
+}
+
+.texto_busca{
+    font-family: beach party;
+    font-size: var(--font-mobile-p);
+    color: var(--cor-preto-transp);
+}
+
+.busca{
+    padding: 10px;
+    border-radius: 10px;
+    background:var(--cor-azul-claro);
+    font-family: beach party;
+    font-size: var(--font-mobile-p);
+    color: var(--cor-preto-transp);
+}
+
+.temperatura{
+    font-family: beach party;
+    margin:.4em;
+    color: var(--cor-preto-transp);
+    font-size: var(--font-mobile-p2);
+}
+
+.cidade{
+    font-size: var(--font-mobile-p);
+    text-align: center;
+    margin-bottom: .2em;
+}
+
+.grau{
+    font-size: var(--font-mobile-p2);
+    text-align: center;
+}
+
+@media screen and (min-width:1024px) {
+    #map{
+        transform: scale(1.0);
+        width: 100vw;
+        height: 70vh;
+    }
+    .texto_busca{
+        font-size: var(--font-web-p2);
+    }
+    .cidade{
+        font-size: var(--font-web-p2);
+    }
+    .busca{
+        font-size: var(--font-web-p);
+    }
+    .grau{
+        font-size: var(--font-web-temperatura);
+    }
+    .simbolo_temperatura{
+    font-size: var(--font-web-p);
+}
+}
+
+.menu-lateral{
+    width: 25%;
+    height: 100vh;
+    position:fixed;
+    background-color: var(--cor-preto-transp);
+    top: 0;
+    z-index: 1;
+    display: none;
+}
+
+.ativo{
+    visibility: visible;
+    transform: translateX(600px);
+    transition: 1s;
+    overflow: hidden
+}
+
+.caixa-praia{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top:30px;
+}
+
+.foto-praia{
+    width: 50px;
+    height: 50px;
+}
+
+.nome-praia{
+    font-size: var(--font-mobile-p2);
+    font-family: beach party;
+    color:white
+}
+
+.informações{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items:flex-start;
+    margin-top: 30px;
+    gap: 20px;
+    font-size: var(--font-mobile-p);
+    font-family: beach party;
+    color: white;
+}
+
+@media screen and (min-width:1024px) {
+    .nome-praia{
+        font-size: var(--font-web-p2);
+    }
+    .informações{
+        font-size: var(--font-web-p);
+    }
+}

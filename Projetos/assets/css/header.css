@@ -1,0 +1,27 @@
+header{
+    background: var(--cor-areia);
+    width: 100%;
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+}
+
+.header{
+    display: flex;
+    align-items:center; 
+    padding-block: 10px;
+}
+
+.logo{
+    font-family: beach;
+    font-size: var(--font-mobile);
+    text-decoration: none;
+    color: black;
+    margin: 2px;
+}
+
+@media screen and (min-width:1024px) {
+    .logo{
+        font-size:var(--font-web);
+    }
+}

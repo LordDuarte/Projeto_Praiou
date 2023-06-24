@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.css" />    
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <a href="#" class="logo">Praiou!</a>
+            <div><nav></nav></div>
+            <div></div>
+        </div>
+    </header>
+    <main>
+        <nav class="menu-lateral">
+            <div class="caixa-praia">
+                <figure class="foto-praia">Imagem</figure>
+                <h1 class="nome-praia">Nome da praia</h1>
+            </div>
+            <div class="informações">
+                <p class="informação-cidade">Cidade: Nome da cidade</p>
+                <p class="informação-estado">Estado: Nome do estado</p class="informação-">
+                <p class="informação-ventos">Ventos: Velocidade dos ventos</p class="informação-">
+                <p class="informação-direção">Direção dos ventos: direção</p class="informação-">
+                <p class="informação-raios">Raios UV: UV</p class="informação-">
+                <p class="informação-humidade">Humidade: Humidade</p>
+            </div>
+        </nav>
+        <section id="part-1">
+            <div class="barra_busca">
+                <label class="texto_busca" for="search">Busque por cidades</label>
+                <input class="busca" type="search">
+            </div>
+            <div class="simbolo_temperatura"></div>
+            <div class="temperatura"><p class="cidade"></p><p class="grau"></p></div>
+        </section>
+            <div></div>
+        </div>
+        <div id="map"></div>
+        <!--<script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.js"></script>
+        <script src="./assets/js/map.js"></script>-->
+        <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAUJlF2-GTRbGouie_mzFv8_eMKdYKrCm0&libraries=places&callback=initMap"></script>
+        <script src="./assets/js/mapg.js"></script>
+    </main>
+</body>
+</html>

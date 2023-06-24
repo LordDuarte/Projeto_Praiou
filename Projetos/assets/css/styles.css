@@ -1,0 +1,33 @@
+@import url('../css/index.css');
+@import url('../css/header.css');
+
+@font-face {
+    font-family: beach;
+    src: url('../fonts/Beach.ttf');
+}
+
+@font-face {
+    font-family: beach party;
+    src: url('../fonts/BEACH_PARTY.otf');
+}
+:root{
+    --font-mobile:100px;
+    --font-web:70px;
+
+    --font-web-p:32px;
+    --font-web-p2:38px;
+
+    --font-mobile-p:58px;
+    --font-mobile-p2:64px;
+
+    --font-mobile-temperatura:64px;
+    --font-web-temperatura:50px;
+
+    --cor-areia:rgb(213,168,85);
+    --background:linear-gradient(180deg, rgb(213,168,85)10%,rgb(85, 145, 213,.9)10%);
+    --cor-azul:rgba(85, 145, 213,.9);
+    --cor-azul-claro:rgba(155, 187, 224, 0.696);
+    --cor-amarelo-claro:rgba(186, 189, 30, 0.341);
+    --cor-verde:rgba(11, 107, 13, 0.727);
+    --cor-preto-transp:rgb(46, 36, 82);
+}
